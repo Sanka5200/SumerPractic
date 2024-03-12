@@ -1,0 +1,278 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav>
+  <ul class="menu">
+    <li><a href="/" >Главная</a>
+    </li>
+      <li><a href="{% url 'admin' %}">Авторизация</a></li>
+      <li><a href="">Расписание</a>
+          <ul class="submenu">
+             <li><a href="">факультет геоинформатики и информационной безопасности</a>
+              <ul class="submenu">
+                  <li><a href="">1 курс</a><ul class="submenu">
+                    <li><a href="gr0">2022-ФГиИБ-ИБ-1б</a></li>
+                    <li><a href="gr1">2022-ФГиИБ-ИБ-2б</a></li>
+                    <li><a href="gr2">2022-ФГиИБ-ИСиТ-1б</a></li>
+                    <li><a href="gr3">2022-ФГиИБ-ИСиТ-2б</a></li>
+                    <li><a href="gr4">2022-ФГиИБ-ИСиТ-3б</a></li>
+                    <li><a href="gr5">2022-ФГиИБ-ИСиТиб ик</a></li>
+                    <li><a href="gr6">2022-ФГиИБ-ПИ-1б</a></li>
+                    <li><a href="gr7">2022-ФГиИБ-ПИ-2б</a></li>
+                    <li><a href="gr8">2022-ФГиИБ-ПИабпд-1м</a></li>
+              </ul>
+              </li>
+                  <li><a href="">2 курс</a><ul class="submenu">
+                  <li><a href="gr9">2021-ФГиИБ-Геоинф-1а</a></li>
+                    <li><a href="gr10">2021-ФГиИБ-ИБ-1б</a></li>
+                    <li><a href="gr11">2021-ФГиИБ-ИБ-2б</a></li>
+                    <li><a href="gr12">2021-ФГиИБ-ИСиТ-1б</a></li>
+                    <li><a href="gr13">2021-ФГиИБ-ИСиТ-2б</a></li>
+                    <li><a href="gr14">2021-ФГиИБ-ИСиТгсит-</a></li>
+                    <li><a href="gr15">2021-ФГиИБ-ИСиТиб ик</a></li>
+                    <li><a href="gr16">2021-ФГиИБ-ПИ-1б</a></li>
+                    <li><a href="gr17">2021-ФГиИБ-ПИ-2б</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">3 курс</a><ul class="submenu">
+                  <li><a href="gr18">2020-ФГиИБ-ИБ-1б</a></li>
+                    <li><a href="gr19">2020-ФГиИБ-ИБ-2б</a></li>
+                    <li><a href="gr20">2020-ФГиИБ-ИСиТ-1б</a></li>
+                    <li><a href="gr21">2020-ФГиИБ-ИСиТ-2б</a></li>
+                    <li><a href="gr22"> 2020-ФГиИБ-ПИ-1б</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">4 курс</a><ul class="submenu">
+                  <li><a href="gr23">2019-ФГиИБ-ИБ-1б</a></li>
+                    <li><a href="gr24">2019-ФГиИБ-ИБ-2б</a></li>
+                    <li><a href="gr25">2019-ФГиИБ-ИСиТ-1б</a></li>
+                    <li><a href="gr26">2019-ФГиИБ-ПИ-1б</a></li>
+                      </ul>
+                      </li>
+              </ul>
+              </li>
+            <li><a href="">геодезический факультет</a>
+              <ul class="submenu">
+                  <li><a href="">1 курс</a><ul class="submenu">
+                    <li><a href="gr27">2022-ГФ-АКС-1асп</a></li>
+                    <li><a href="gr28">2022-ГФ-Г-1асп</a></li>
+                    <li><a href="gr29">2022-ГФ-ГиДЗакс-1б</a></li>
+                    <li><a href="gr30">2022-ГФ-ГиДЗакс-1м</a></li>
+                    <li><a href="gr31">2022-ГФ-ГиДЗг-1б</a></li>
+                    <li><a href="gr32">2022-ГФ-ГиДЗг-1м</a></li>
+                    <li><a href="gr33">2022-ГФ-ГиДЗипр-1б</a></li>
+                    <li><a href="gr34">2022-ГФ-ГиДЗкгин-1б</a></li>
+                    <li><a href="gr35">2022-ГФ-ПГинж.г-1с</a></li>
+                    <li><a href="gr36">2022-ГФ-ПГинж.г-2с</a></li>
+                    <li><a href="gr37">2022-ГФ-ПГинж.г-3с</a></li>
+                    <li><a href="gr38">2022-ГФ-ПГинж.г-4с</a></li>
+                    <li><a href="gr39">2022-ГФ-ПГинж.г-5с</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">2 курс</a><ul class="submenu">
+                  <li><a href="gr40">2021-ГФ-АКС-1асп(оч)</a></li>
+                    <li><a href="gr41">2021-ГФ-Г-1асп(оч)</a></li>
+                    <li><a href="gr42">2021-ГФ-ГиДЗакс-1б</a></li>
+                    <li><a href="gr43">2021-ГФ-ГиДЗг-1б</a></li>
+                    <li><a href="gr44">2021-ГФ-ГиДЗипр-1б</a></li>
+                    <li><a href="gr45">2021-ГФ-ГиДЗкгин-1б</a></li>
+                    <li><a href="gr46">2021-ГФ-ПГинж.г-1с</a></li>
+                    <li><a href="gr47">2021-ГФ-ПГинж.г-2с</a></li>
+                    <li><a href="gr48">2021-ГФ-ПГинж.г-3с</a></li>
+                    <li><a href="gr49">2021-ГФ-ПГинж.г-4с</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">3 курс</a><ul class="submenu">
+                  <li><a href="gr50">2020-ГФ-ГиДЗакс-1б</a></li>
+                    <li><a href="gr51">2020-ГФ-ГиДЗг-1б</a></li>
+                    <li><a href="gr52">2020-ГФ-ГиДЗипр-1б</a></li>
+                    <li><a href="gr53">2020-ГФ-ГиДЗкгин-1б</a></li>
+                    <li><a href="gr54">2020-ГФ-ПГинж.г-1с</a></li>
+                    <li><a href="gr55">2020-ГФ-ПГинж.г-2с</a></li>
+                    <li><a href="gr56">2020-ГФ-ПГинж.г-3с</a></li>
+                    <li><a href="gr57">2020-ГФ-ПГинж.г-4с</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">4 курс</a><ul class="submenu">
+                  <li><a href="gr58">2019-ГФ-ГиДЗакс-1б</a></li>
+                    <li><a href="gr59">2019-ГФ-ГиДЗг-1б</a></li>
+                    <li><a href="gr60">2019-ГФ-ГиДЗипр-1б</a></li>
+                    <li><a href="gr61">2019-ГФ-ГиДЗкгин-1б</a></li>
+                    <li><a href="gr62">2019-ГФ-ПГинж.г-1с</a></li>
+                    <li><a href="gr63">2019-ГФ-ПГинж.г-2с</a></li>
+                    <li><a href="gr64">2019-ГФ-ПГинж.г-3с</a></li>
+                    <li><a href="gr65">2019-ГФ-ПГинж.г-4с</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">5 курс</a><ul class="submenu">
+                  <li><a href="gr66">2018-ГФ-ПГинж.г-1с</a></li>
+                    <li><a href="gr67">2018-ГФ-ПГинж.г-2с</a></li>
+                    <li><a href="gr68">2018-ГФ-ПГинж.г-3с</a></li>
+                      </ul>
+                      </li>
+              </ul>
+              </li>
+            <li><a href="">факультет архитектуры и градостроительства</a><ul class="submenu">
+                  <li><a href="">1 курс</a><ul class="submenu">
+                  <li><a href="gr69">2022-ФАиГ-АРХ-1б</a></li>
+                    <li><a href="gr70">2022-ФАиГ-АРХ-1м</a></li>
+                    <li><a href="gr71">2022-ФАиГ-АРХ-2м</a></li>
+                    <li><a href="gr72">2022-ФАиГ-Градо-1б</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">2 курс</a><ul class="submenu">
+                  <li><a href="gr73">2021-ФАиГ-АРХ-1б</a></li>
+                    <li><a href="gr74">2021-ФАиГ-АРХ-1м</a></li>
+                    <li><a href="gr75">2021-ФАиГ-Градо-1б</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">3 курс</a><ul class="submenu">
+                  <li><a href="gr76">2020-ФАиГ-АРХ-1б</a></li>
+                    <li><a href="gr77">2020-ФАиГ-АРХ-2б</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">4 курс</a><ul class="submenu">
+                  <li><a href="gr78">2019-ФАиГ-АРХ-1б</a></li>
+                    <li><a href="gr79">2019-ФАиГ-АРХ-2б</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">5 курс</a><ul class="submenu">
+                  <li><a href="gr80">2018-ФАиГ-АРХ-1б</a></li>
+                    <li><a href="gr81">2018-ФАиГ-АРХ-2б</a></li>
+                      </ul>
+                      </li>
+              </ul>
+              </li>
+            <li><a href="">факультет оптического приборостроения</a>
+              <ul class="submenu">
+                  <li><a href="">1 курс</a><ul class="submenu">
+                    <li><a href="gr82">2022-ФОП-ЛТиЛТ-1б</a></li>
+                    <li><a href="gr83">2022-ФОП-ОПТ-1б</a></li>
+                    <li><a href="gr84">2022-ФОП-ОПТ-1м</a></li>
+                    <li><a href="gr85">2022-ФОП-ОПТ-2м</a></li>
+                    <li><a href="gr86">2022-ФОП-ОЭП-1асп</a></li>
+                    <li><a href="gr87">2022-ФОП-ЭиОЭПиССН-1</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">2 курс</a><ul class="submenu">
+                  <li><a href="gr88">2021-ФОП-ЛТиЛТ-1б</a></li>
+                    <li><a href="gr89">2021-ФОП-ОПТ-1б</a></li>
+                    <li><a href="gr90">2021-ФОП-ОЭПиС-1асп</a></li>
+                    <li><a href="gr91">2021-ФОП-ЭиОЭПиССН-1</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">3 курс</a><ul class="submenu">
+                  <li><a href="gr92">2020-ФОП-ЛТиЛТ-1б</a></li>
+                    <li><a href="gr93">2020-ФОП-ОПТ-1б</a></li>
+                    <li><a href="gr94">2020-ФОП-ЭиОЭПиССН-1</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">4 курс</a><ul class="submenu">
+                  <li><a href="gr95">2019-ФОП-ЛТиЛТ-1б</a></li>
+                    <li><a href="gr96">2019-ФОП-ОПТ-1б</a></li>
+                    <li><a href="gr97">2019-ФОП-ЭиОЭПиССН-1</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">5 курс</a><ul class="submenu">
+                  <li><a href="gr98">2018-ФОП-ЭиОЭПиССН-1</a></li>
+                      </ul>
+                      </li>
+              </ul>
+              </li>
+            <li><a href="">факультет управления территориями</a>
+              <ul class="submenu">
+                  <li><a href="">1 курс</a><ul class="submenu">
+                  <li><a href="gr99">2022-ФУТ-ЗиКзио-1б</a></li>
+                    <li><a href="gr100">2022-ФУТ-ЗиКзио-1м</a></li>
+                    <li><a href="gr101">2022-ФУТ-ЗиКкн-1б</a></li>
+                    <li><a href="gr102">2022-ФУТ-ЗиКунирт-1м</a></li>
+                    <li><a href="gr103">2022-ФУТ-ЗиКупр-1б</a></li>
+                    <li><a href="gr104">2022-ФУТ-ЗКиМЗ-1асп</a></li>
+                    <li><a href="gr105">2022-ФУТ-САиУ-1б</a></li>
+                    <li><a href="gr106">2022-ФУТ-УК-1б</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">2 курс</a><ul class="submenu">
+                  <li><a href="gr107">2021-ФУТ-ЗиКзио-1б</a></li>
+                    <li><a href="gr108">2021-ФУТ-ЗиКзио-1м</a></li>
+                    <li><a href="gr109">2021-ФУТ-ЗиКкн-1б</a></li>
+                    <li><a href="gr110">2021-ФУТ-ЗиКунирт-1м</a></li>
+                    <li><a href="gr111">2021-ФУТ-ЗиКупр-1б</a></li>
+                    <li><a href="gr112">2021-ФУТ-ЗК-1асп (оч</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">3 курс</a><ul class="submenu">
+                  <li><a href="gr113">2020-ФУТ-ЗиКзио-1б</a></li>
+                    <li><a href="gr114">2020-ФУТ-ЗиКкн-1б</a></li>
+                    <li><a href="gr115">2020-ФУТ-ЗиКупр-1б</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">4 курс</a><ul class="submenu">
+                  <li><a href="gr116">2019-ФУТ-ЗиКзио-1б</a></li>
+                    <li><a href="gr117">2019-ФУТ-ЗиКкн-1б</a></li>
+                    <li><a href="gr118">2019-ФУТ-ЗиКупр-1б</a></li>
+                      </ul>
+                      </li>
+              </ul>
+              </li>
+              <li><a href="">картографический факультет</a><ul class="submenu">
+                  <li><a href="">1 курс</a><ul class="submenu">
+                  <li><a href="gr119">2022-КФ-ГК-1асп</a></li>
+                    <li><a href="gr120">2022-КФ-КиГ-1б</a></li>
+                    <li><a href="gr121">2022-КФ-КиГ-1м</a></li>
+                    <li><a href="gr122">2022-КФ-КиГ-2б</a></li>
+                    <li><a href="gr123">2022-КФ-КиГ-2м</a></li>
+                    <li><a href="gr124">2022-КФ-КиГ-3б</a></li>
+                    <li><a href="gr125">2022-КФ-КиГ-4б</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">2 курс</a><ul class="submenu">
+                  <li><a href="gr126">2021-КФ-К-1асп</a></li>
+                    <li><a href="gr127">2021-КФ-КиГ-1б</a></li>
+                    <li><a href="gr128">2021-КФ-КиГ-2б</a></li>
+                    <li><a href="gr129">2021-КФ-КиГ-3б</a></li>
+                    <li><a href="gr130">2021-КФ-КиГ-4б</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">3 курс</a><ul class="submenu">
+                    <li><a href="gr131">2020-КФ-КиГ-1б</a></li>
+                  <li><a href="gr132">2020-КФ-КиГ-2б</a></li>
+                    <li><a href="gr133">2020-КФ-КиГ-3б</a></li>
+                    <li><a href="gr134">2020-КФ-КиГ-4б</a></li>
+                      </ul>
+                      </li>
+                  <li><a href="">4 курс</a><ul class="submenu">
+                  <li><a href="gr134">2019-КФ-КиГ-1б</a></li>
+                    <li><a href="gr135">2019-КФ-КиГ-2б</a></li>
+                    <li><a href="gr136">2019-КФ-КиГ-3б</a></li>
+                    <li><a href="gr137">2019-КФ-КиГ-4б</a></li>
+                      </ul>
+                      </li>
+              </ul>
+              </li>
+          </ul>
+        </li>
+      <li><a href="{% url 'about' %}">Разработчики</a></li>
+      <li><a href="{% url 'writetous' %}">Техподдержка</a></li>
+  </ul>
+</nav>
+    <main>
+          {% block content %}
+          {% endblock %}
+    </main>
+</body>
