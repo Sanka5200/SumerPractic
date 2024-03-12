@@ -1,0 +1,40 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Форма по добавлению комментария{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Форма по добавлению комментария</h1>
+        <form method="post">
+            {% csrf_token %}
+            <select name="variant">
+                <option selected="selected">Выберите группу</option><br>
+            </select><br>
+            {{ form.comments }}<br>
+            {{ form.text }}<br>
+            {{ form.date }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Добавить комментарий</button>
+        </form>
+    </div>
+{% endblock %}
+{% extends 'main/layout.html' %}
+
+{% block title %}Расписание{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>РАСПИСАНИЕ</h1>
+        {% if book %}
+            {% for el in book %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.group }}</h3>
+                    <p>{{ el.text }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Изменений в расписании нет</p>
+        {% endif %}
+        {# Комментарий #}
+    </div>
+{% endblock %}
