@@ -1,0 +1,272 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>    
+<meta charset="UTF-8">    
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">    
+<meta http-equiv="X-UA-Compatible" content="ie=edge">    
+<title>{% block title %}{% endblock %}</title>    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">    
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=DGYy6kpCaK9lUmlBYpfwaFwkurK-02hbokS6esVpl05H9Bzwiz9fihPKbkAkVem039BXqApAtAWWnDN8mJ9F2obD8APw_og2uammpnVYSyE1JyhgOWeR7cSyJxrw5f7vijSRSbJ1zDV-1XswQtq85i08O7REH__4Ocmex91W-naZYZlGgyY489d2cCEwBxtAwVrOJX1frUfLaCaMZPMAIOH3vIMGRjyXyvILbm3ogRbRVdW1sYvbEBU8zRP-r6RxzM1yYVvEyL20wUv0t11L2g" charset="UTF-8"></script></head>
+<body>
+<nav>  
+<ul class="menu">    
+<li><a href="/" >Главная</a>    
+</li>      
+<li><a href="{% url 'admin' %}">Авторизация</a></li>      
+<li><a href="">Расписание</a>
+<ul class="submenu"><li><a href="">ГФ</a><ul class="submenu">
+<li><a href="">1 курс</a><ul class="submenu">
+<li><a href=gr0>2023-ГФ-АКС-1асп</a></li>
+<li><a href=gr1>2023-ГФ-Г-1асп</a></li>
+<li><a href=gr2>2023-ГФ-ГиДЗакс-1б</a></li>
+<li><a href=gr3>2023-ГФ-ГиДЗакс-1м</a></li>
+<li><a href=gr4>2023-ГФ-ГиДЗг-1б</a></li>
+<li><a href=gr5>2023-ГФ-ГиДЗг-1м</a></li>
+<li><a href=gr6>2023-ГФ-ГиДЗипр-1б</a></li>
+<li><a href=gr7>2023-ГФ-ГиДЗкгин-1б</a></li>
+<li><a href=gr8>2023-ГФ-ПГинж.г-1с</a></li>
+<li><a href=gr9>2023-ГФ-ПГинж.г-2с</a></li>
+<li><a href=gr10>2023-ГФ-ПГинж.г-3с</a></li>
+<li><a href=gr11>2023-ГФ-ПГинж.г-4с</a></li>
+</ul>
+</li>
+<li><a href="">2 курс</a><ul class="submenu">
+<li><a href=gr12>2022-ГФ-ГиДЗакс-1б</a></li>
+<li><a href=gr13>2022-ГФ-ГиДЗг-1б</a></li>
+<li><a href=gr14>2022-ГФ-ГиДЗипр-1б</a></li>
+<li><a href=gr15>2022-ГФ-ГиДЗкгин-1б</a></li>
+<li><a href=gr16>2022-ГФ-ПГинж.г-1с</a></li>
+<li><a href=gr17>2022-ГФ-ПГинж.г-2с</a></li>
+<li><a href=gr18>2022-ГФ-ПГинж.г-3с</a></li>
+<li><a href=gr19>2022-ГФ-ПГинж.г-4с</a></li>
+<li><a href=gr20>2022-ГФ-ПГинж.г-5с</a></li>
+</ul>
+</li>
+<li><a href="">3 курс</a><ul class="submenu">
+<li><a href=gr21>2021-ГФ-ГиДЗакс-1б</a></li>
+<li><a href=gr22>2021-ГФ-ГиДЗг-1б</a></li>
+<li><a href=gr23>2021-ГФ-ГиДЗипр-1б</a></li>
+<li><a href=gr24>2021-ГФ-ГиДЗкгин-1б</a></li>
+<li><a href=gr25>2021-ГФ-ПГиго нгк-1с</a></li>
+<li><a href=gr26>2021-ГФ-ПГинж.г-1с</a></li>
+<li><a href=gr27>2021-ГФ-ПГинж.г-2с</a></li>
+<li><a href=gr28>2021-ГФ-ПГинж.г-3с</a></li>
+</ul>
+</li>
+<li><a href="">4 курс</a><ul class="submenu">
+<li><a href=gr29>2020-ГФ-ГиДЗакс-1б</a></li>
+<li><a href=gr30>2020-ГФ-ГиДЗг-1б</a></li>
+<li><a href=gr31>2020-ГФ-ГиДЗипр-1б</a></li>
+<li><a href=gr32>2020-ГФ-ГиДЗкгин-1б</a></li>
+<li><a href=gr33>2020-ГФ-ПГинж.г-1с</a></li>
+<li><a href=gr34>2020-ГФ-ПГинж.г-2с</a></li>
+<li><a href=gr35>2020-ГФ-ПГинж.г-3с</a></li>
+<li><a href=gr36>2020-ГФ-ПГинж.г-4с</a></li>
+</ul>
+</li>
+<li><a href="">5 курс</a><ul class="submenu">
+<li><a href=gr37>2019-ГФ-ПГинж.г-1с</a></li>
+<li><a href=gr38>2019-ГФ-ПГинж.г-2с</a></li>
+<li><a href=gr39>2019-ГФ-ПГинж.г-3с</a></li>
+<li><a href=gr40>2019-ГФ-ПГинж.г-4с</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="">КФ</a><ul class="submenu">
+<li><a href="">1 курс</a><ul class="submenu">
+<li><a href=gr41>2023-КФ-ГК-1асп</a></li>
+<li><a href=gr42>2023-КФ-КиГ-1б</a></li>
+<li><a href=gr43>2023-КФ-КиГ-1м</a></li>
+<li><a href=gr44>2023-КФ-КиГ-2б</a></li>
+<li><a href=gr45>2023-КФ-КиГ-2м</a></li>
+<li><a href=gr46>2023-КФ-КиГ-3б</a></li>
+<li><a href=gr47>2023-КФ-КиГ-4б</a></li>
+<li><a href=gr48>2023-КФ-ЭиП-1б</a></li>
+</ul>
+</li>
+<li><a href="">2 курс</a><ul class="submenu">
+<li><a href=gr49>2022-КФ-КиГ-1б</a></li>
+<li><a href=gr50>2022-КФ-КиГ-2б</a></li>
+<li><a href=gr51>2022-КФ-КиГ-3б</a></li>
+<li><a href=gr52>2022-КФ-КиГ-4б</a></li>
+</ul>
+</li>
+<li><a href="">3 курс</a><ul class="submenu">
+<li><a href=gr53>2021-КФ-КиГ-1б</a></li>
+<li><a href=gr54>2021-КФ-КиГ-2б</a></li>
+<li><a href=gr55>2021-КФ-КиГ-3б</a></li>
+</ul>
+</li>
+<li><a href="">4 курс</a><ul class="submenu">
+<li><a href=gr56>2020-КФ-КиГ-1б</a></li>
+<li><a href=gr57>2020-КФ-КиГ-2б</a></li>
+<li><a href=gr58>2020-КФ-КиГ-3б</a></li>
+<li><a href=gr59>2020-КФ-КиГ-4б</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="">ФАиГ</a><ul class="submenu">
+<li><a href="">1 курс</a><ul class="submenu">
+<li><a href=gr60>2023-ФАиГ-АРХ-1б</a></li>
+<li><a href=gr61>2023-ФАиГ-АРХ-1м</a></li>
+<li><a href=gr62>2023-ФАиГ-Градо-1б</a></li>
+</ul>
+</li>
+<li><a href="">2 курс</a><ul class="submenu">
+<li><a href=gr63>2022-ФАиГ-АРХ-1б</a></li>
+<li><a href=gr64>2022-ФАиГ-АРХ-1м</a></li>
+<li><a href=gr65>2022-ФАиГ-АРХ-2м</a></li>
+<li><a href=gr66>2022-ФАиГ-Градо-1б</a></li>
+</ul>
+</li>
+<li><a href="">3 курс</a><ul class="submenu">
+<li><a href=gr67>2021-ФАиГ-АРХ-1б</a></li>
+<li><a href=gr68>2021-ФАиГ-Градо-1б</a></li>
+</ul>
+</li>
+<li><a href="">4 курс</a><ul class="submenu">
+<li><a href=gr69>2020-ФАиГ-АРХ-1б</a></li>
+<li><a href=gr70>2020-ФАиГ-АРХ-2б</a></li>
+</ul>
+</li>
+<li><a href="">5 курс</a><ul class="submenu">
+<li><a href=gr71>2019-ФАиГ-АРХ-1б</a></li>
+<li><a href=gr72>2019-ФАиГ-АРХ-2б</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="">ФОП</a><ul class="submenu">
+<li><a href="">1 курс</a><ul class="submenu">
+<li><a href=gr73>2023-ФОП-ЛТиЛТ-1б</a></li>
+<li><a href=gr74>2023-ФОП-ОПТ-1б</a></li>
+<li><a href=gr75>2023-ФОП-ОПТ-1м</a></li>
+<li><a href=gr76>2023-ФОП-ОЭП-1асп</a></li>
+<li><a href=gr77>2023-ФОП-ЭиОЭПиССН-1</a></li>
+</ul>
+</li>
+<li><a href="">2 курс</a><ul class="submenu">
+<li><a href=gr78>2022-ФОП-ЛТиЛТ-1б</a></li>
+<li><a href=gr79>2022-ФОП-ОПТ-1б</a></li>
+<li><a href=gr80>2022-ФОП-ЭиОЭПиССН-1</a></li>
+</ul>
+</li>
+<li><a href="">3 курс</a><ul class="submenu">
+<li><a href=gr81>2021-ФОП-ЛТиЛТ-1б</a></li>
+<li><a href=gr82>2021-ФОП-ОПТ-1б</a></li>
+<li><a href=gr83>2021-ФОП-ЭиОЭПиССН-1</a></li>
+</ul>
+</li>
+<li><a href="">4 курс</a><ul class="submenu">
+<li><a href=gr84>2020-ФОП-ЛТиЛТ-1б</a></li>
+<li><a href=gr85>2020-ФОП-ОПТ-1б</a></li>
+<li><a href=gr86>2020-ФОП-ЭиОЭПиССН-1</a></li>
+</ul>
+</li>
+<li><a href="">5 курс</a><ul class="submenu">
+<li><a href=gr87>2019-ФОП-ЭиОЭПиССН-1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="">ФУТ</a><ul class="submenu">
+<li><a href="">1 курс</a><ul class="submenu">
+<li><a href=gr88>2023-ФУТ-ЗиКзио-1б</a></li>
+<li><a href=gr89>2023-ФУТ-ЗиКзио-1м</a></li>
+<li><a href=gr90>2023-ФУТ-ЗиКкн-1б</a></li>
+<li><a href=gr91>2023-ФУТ-ЗиКунирт-1м</a></li>
+<li><a href=gr92>2023-ФУТ-ЗиКупр-1б</a></li>
+<li><a href=gr93>2023-ФУТ-ЗКиМЗ-1асп</a></li>
+<li><a href=gr94>2023-ФУТ-САУ-1б</a></li>
+<li><a href=gr95>2023-ФУТ-УпрК-1б</a></li>
+</ul>
+</li>
+<li><a href="">2 курс</a><ul class="submenu">
+<li><a href=gr96>2022-ФУТ-ЗиКзио-1б</a></li>
+<li><a href=gr97>2022-ФУТ-ЗиКзио-1м</a></li>
+<li><a href=gr98>2022-ФУТ-ЗиКкн-1б</a></li>
+<li><a href=gr99>2022-ФУТ-ЗиКунирт-1м</a></li>
+<li><a href=gr100>2022-ФУТ-ЗиКупр-1б</a></li>
+<li><a href=gr101>2022-ФУТ-САУ-1б</a></li>
+<li><a href=gr102>2022-ФУТ-УпрК-1б</a></li>
+</ul>
+</li>
+<li><a href="">3 курс</a><ul class="submenu">
+<li><a href=gr103>2021-ФУТ-ЗиКзио-1б</a></li>
+<li><a href=gr104>2021-ФУТ-ЗиКкн-1б</a></li>
+<li><a href=gr105>2021-ФУТ-ЗиКупр-1б</a></li>
+<li><a href=gr106>2021-ФУТ-САУ-1б</a></li>
+<li><a href=gr107>2021-ФУТ-ЮС(вв)-1б</a></li>
+</ul>
+</li>
+<li><a href="">4 курс</a><ul class="submenu">
+<li><a href=gr108>2020-ФУТ-ЗиКзио-1б</a></li>
+<li><a href=gr109>2020-ФУТ-ЗиКкн-1б</a></li>
+<li><a href=gr110>2020-ФУТ-ЗиКупр-1б</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="">ФГиИБ</a><ul class="submenu">
+<li><a href="">1 курс</a><ul class="submenu">
+<li><a href=gr111>2023-ФГиИБ-ИБ-1б</a></li>
+<li><a href=gr112>2023-ФГиИБ-ИБ-1м</a></li>
+<li><a href=gr113>2023-ФГиИБ-ИБ-2б</a></li>
+<li><a href=gr114>2023-ФГиИБ-ИСиТ-1б</a></li>
+<li><a href=gr115>2023-ФГиИБ-ИСиТ-2б</a></li>
+<li><a href=gr116>2023-ФГиИБ-ИСиТиб ик</a></li>
+<li><a href=gr117>2023-ФГиИБ-ПИ-1б</a></li>
+<li><a href=gr118>2023-ФГиИБ-ПИабпд-1м</a></li>
+</ul>
+</li>
+<li><a href="">2 курс</a><ul class="submenu">
+<li><a href=gr119>2022-ФГиИБ-ИБ-1б</a></li>
+<li><a href=gr120>2022-ФГиИБ-ИБ-1м</a></li>
+<li><a href=gr121>2022-ФГиИБ-ИБ-2б</a></li>
+<li><a href=gr122>2022-ФГиИБ-ИСиТ-1б</a></li>
+<li><a href=gr123>2022-ФГиИБ-ИСиТ-2б</a></li>
+<li><a href=gr124>2022-ФГиИБ-ИСиТ-3б</a></li>
+<li><a href=gr125>2022-ФГиИБ-ИСиТиб ик</a></li>
+<li><a href=gr126>2022-ФГиИБ-ПИ-1б</a></li>
+<li><a href=gr127>2022-ФГиИБ-ПИ-1м</a></li>
+</ul>
+</li>
+<li><a href="">3 курс</a><ul class="submenu">
+<li><a href=gr128>2021-ФГиИБ-ИБ-1б</a></li>
+<li><a href=gr129>2021-ФГиИБ-ИБ-2б</a></li>
+<li><a href=gr130>2021-ФГиИБ-ИСиТ-1б</a></li>
+<li><a href=gr131>2021-ФГиИБ-ИСиТ-2б</a></li>
+<li><a href=gr132>2021-ФГиИБ-ПИ-1б</a></li>
+<li><a href=gr133>2021-ФГиИБ-ПИ-2б</a></li>
+</ul>
+</li>
+<li><a href="">4 курс</a><ul class="submenu">
+<li><a href=gr134>2020-ФГиИБ-ИБ-1б</a></li>
+<li><a href=gr135>2020-ФГиИБ-ИБ-2б</a></li>
+<li><a href=gr136>2020-ФГиИБ-ИСиТ-1б</a></li>
+<li><a href=gr137>2020-ФГиИБ-ИСиТ-2б</a></li>
+<li><a href=gr138>2020-ФГиИБ-ПИ-1б</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="{% url 'about' %}">Разработчики</a></li>
+<li><a href="{% url 'writetous' %}">Техподдержка</a></li>
+</ul>
+</nav>
+<main>
+{% block content %}
+{% endblock %}
+</main>
+</body>
