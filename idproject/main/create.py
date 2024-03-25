@@ -7,15 +7,11 @@ with urllib.request.urlopen("https://study.miigaik.ru/api/v1/groups") as url:
     data2 = str(data)
     counter = data2.count('}')
 
-count_faculty=0
-count_course=0
-count_group=0
 year_today = str(date.today())[:4]
 cici = 0
 faculty_t = ''
 course_t = ''
 group_t = ''
-coper = 0
 with urllib.request.urlopen("https://study.miigaik.ru/api/v1/groups") as url:
     data = json.load(url)
     data2 = str(data)
