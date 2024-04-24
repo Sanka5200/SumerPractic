@@ -85,17 +85,17 @@ with open('list_by_faculties,_courses_and_groups.txt', 'w', encoding='utf-8') as
 
             f.write(f"{faculty}, {course}, {gruppa}\n")
             if faculty_t == '':
-                    new.write(f'<li><a href="">{faculty}</a><ul class="submenu">\n')
+                new.write(f'<li><a href="">{faculty}</a><ul class="submenu">\n')
             elif faculty_t != faculty and faculty_t != '':
                 new.write(f'</ul>\n</li>\n</ul>\n</li>\n<li><a href="">{faculty}</a><ul class="submenu">\n')
-            if course_t == '' or course == 1 and course_t != 1:
+            if course == '1' and course_t != '1':
                 new.write(f'<li><a href="">{course} курс</a><ul class="submenu">\n')
-            elif course_t != course and course_t != '' and course != 1:
-                        new.write(f'</ul>\n</li>\n<li><a href="">{course} курс</a><ul class="submenu">\n')
+            elif course != '1' and course_t != course and course_t != '':
+                new.write(f'</ul>\n</li>\n<li><a href="">{course} курс</a><ul class="submenu">\n')
             if gruppa_t != gruppa:
                 new.write(f'<li><a href=gr{counter_cycle}>{gruppa}</a></li>\n')
             else:
-                   break
+                break
             faculty_t = faculty
             course_t = course
             gruppa_t = gruppa

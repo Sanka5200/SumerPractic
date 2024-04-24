@@ -163,11 +163,11 @@ for string in range(number_of_lines):
         need = need.replace('bgcolor="#ffffaa"', '')
 
         file_path = 'templates/main/Расписание/' + file_name + '.html'
-        # string = 'gr' + str(number_of_group)
-        # number_of_group += 1
-        # urls_update.write("    path('" + string + "', views." + string + ", name='" + string + "'),\n")
-        # views_update.write("def " + string + "(request):\n")
-        # views_update.write("    return render(request,'" + file_path[10:] + "')\n")
+        string = 'gr' + str(number_of_group)
+        number_of_group += 1
+        urls_update.write("    path('" + string + "', views." + string + ", name='" + string + "'),\n")
+        views_update.write("def " + string + "(request):\n")
+        views_update.write("    return render(request,'" + file_path[10:] + "')\n")
 
         f = open(file_path, 'w', encoding='utf-8')
         f.write("{% extends 'main/layout.html' %}\n{% block title %}Расписание{% endblock %}\n{% block content %}\n")
