@@ -7,3 +7,283 @@ def writetous(request):
     return render(request, 'main/writetous.html')
 def admin(request):
     return render(request, '127.0.0.1:8000/admin')
+def gr0(request):
+    return render(request,'main/Расписание/2023-ГФ-АКС-1асп.html')
+def gr1(request):
+    return render(request,'main/Расписание/2023-ГФ-Г-1асп.html')
+def gr2(request):
+    return render(request,'main/Расписание/2023-ГФ-ГиДЗакс-1б.html')
+def gr3(request):
+    return render(request,'main/Расписание/2023-ГФ-ГиДЗакс-1м.html')
+def gr4(request):
+    return render(request,'main/Расписание/2023-ГФ-ГиДЗг-1б.html')
+def gr5(request):
+    return render(request,'main/Расписание/2023-ГФ-ГиДЗг-1м.html')
+def gr6(request):
+    return render(request,'main/Расписание/2023-ГФ-ГиДЗипр-1б.html')
+def gr7(request):
+    return render(request,'main/Расписание/2023-ГФ-ГиДЗкгин-1б.html')
+def gr8(request):
+    return render(request,'main/Расписание/2023-ГФ-ПГинж.г-1с.html')
+def gr9(request):
+    return render(request,'main/Расписание/2023-ГФ-ПГинж.г-2с.html')
+def gr10(request):
+    return render(request,'main/Расписание/2023-ГФ-ПГинж.г-3с.html')
+def gr11(request):
+    return render(request,'main/Расписание/2023-ГФ-ПГинж.г-4с.html')
+def gr12(request):
+    return render(request,'main/Расписание/2022-ГФ-ГиДЗакс-1б.html')
+def gr13(request):
+    return render(request,'main/Расписание/2022-ГФ-ГиДЗг-1б.html')
+def gr14(request):
+    return render(request,'main/Расписание/2022-ГФ-ГиДЗипр-1б.html')
+def gr15(request):
+    return render(request,'main/Расписание/2022-ГФ-ГиДЗкгин-1б.html')
+def gr16(request):
+    return render(request,'main/Расписание/2022-ГФ-ПГинж.г-1с.html')
+def gr17(request):
+    return render(request,'main/Расписание/2022-ГФ-ПГинж.г-2с.html')
+def gr18(request):
+    return render(request,'main/Расписание/2022-ГФ-ПГинж.г-3с.html')
+def gr19(request):
+    return render(request,'main/Расписание/2022-ГФ-ПГинж.г-4с.html')
+def gr20(request):
+    return render(request,'main/Расписание/2022-ГФ-ПГинж.г-5с.html')
+def gr21(request):
+    return render(request,'main/Расписание/2021-ГФ-ГиДЗакс-1б.html')
+def gr22(request):
+    return render(request,'main/Расписание/2021-ГФ-ГиДЗг-1б.html')
+def gr23(request):
+    return render(request,'main/Расписание/2021-ГФ-ГиДЗипр-1б.html')
+def gr24(request):
+    return render(request,'main/Расписание/2021-ГФ-ГиДЗкгин-1б.html')
+def gr25(request):
+    return render(request,'main/Расписание/2021-ГФ-ПГиго нгк-1с.html')
+def gr26(request):
+    return render(request,'main/Расписание/2021-ГФ-ПГинж.г-1с.html')
+def gr27(request):
+    return render(request,'main/Расписание/2021-ГФ-ПГинж.г-2с.html')
+def gr28(request):
+    return render(request,'main/Расписание/2021-ГФ-ПГинж.г-3с.html')
+def gr29(request):
+    return render(request,'main/Расписание/2020-ГФ-ГиДЗакс-1б.html')
+def gr30(request):
+    return render(request,'main/Расписание/2020-ГФ-ГиДЗг-1б.html')
+def gr31(request):
+    return render(request,'main/Расписание/2020-ГФ-ГиДЗипр-1б.html')
+def gr32(request):
+    return render(request,'main/Расписание/2020-ГФ-ГиДЗкгин-1б.html')
+def gr33(request):
+    return render(request,'main/Расписание/2020-ГФ-ПГинж.г-1с.html')
+def gr34(request):
+    return render(request,'main/Расписание/2020-ГФ-ПГинж.г-2с.html')
+def gr35(request):
+    return render(request,'main/Расписание/2020-ГФ-ПГинж.г-3с.html')
+def gr36(request):
+    return render(request,'main/Расписание/2020-ГФ-ПГинж.г-4с.html')
+def gr37(request):
+    return render(request,'main/Расписание/2019-ГФ-ПГинж.г-1с.html')
+def gr38(request):
+    return render(request,'main/Расписание/2019-ГФ-ПГинж.г-2с.html')
+def gr39(request):
+    return render(request,'main/Расписание/2019-ГФ-ПГинж.г-3с.html')
+def gr40(request):
+    return render(request,'main/Расписание/2019-ГФ-ПГинж.г-4с.html')
+def gr41(request):
+    return render(request,'main/Расписание/2023-КФ-ГК-1асп.html')
+def gr42(request):
+    return render(request,'main/Расписание/2023-КФ-КиГ-1б.html')
+def gr43(request):
+    return render(request,'main/Расписание/2023-КФ-КиГ-1м.html')
+def gr44(request):
+    return render(request,'main/Расписание/2023-КФ-КиГ-2б.html')
+def gr45(request):
+    return render(request,'main/Расписание/2023-КФ-КиГ-2м.html')
+def gr46(request):
+    return render(request,'main/Расписание/2023-КФ-КиГ-3б.html')
+def gr47(request):
+    return render(request,'main/Расписание/2023-КФ-КиГ-4б.html')
+def gr48(request):
+    return render(request,'main/Расписание/2023-КФ-ЭиП-1б.html')
+def gr49(request):
+    return render(request,'main/Расписание/2022-КФ-КиГ-1б.html')
+def gr50(request):
+    return render(request,'main/Расписание/2022-КФ-КиГ-2б.html')
+def gr51(request):
+    return render(request,'main/Расписание/2022-КФ-КиГ-3б.html')
+def gr52(request):
+    return render(request,'main/Расписание/2022-КФ-КиГ-4б.html')
+def gr53(request):
+    return render(request,'main/Расписание/2021-КФ-КиГ-1б.html')
+def gr54(request):
+    return render(request,'main/Расписание/2021-КФ-КиГ-2б.html')
+def gr55(request):
+    return render(request,'main/Расписание/2021-КФ-КиГ-3б.html')
+def gr56(request):
+    return render(request,'main/Расписание/2020-КФ-КиГ-1б.html')
+def gr57(request):
+    return render(request,'main/Расписание/2020-КФ-КиГ-2б.html')
+def gr58(request):
+    return render(request,'main/Расписание/2020-КФ-КиГ-3б.html')
+def gr59(request):
+    return render(request,'main/Расписание/2020-КФ-КиГ-4б.html')
+def gr60(request):
+    return render(request,'main/Расписание/2023-ФАиГ-АРХ-1б.html')
+def gr61(request):
+    return render(request,'main/Расписание/2023-ФАиГ-АРХ-1м.html')
+def gr62(request):
+    return render(request,'main/Расписание/2023-ФАиГ-Градо-1б.html')
+def gr63(request):
+    return render(request,'main/Расписание/2022-ФАиГ-АРХ-1б.html')
+def gr64(request):
+    return render(request,'main/Расписание/2022-ФАиГ-АРХ-1м.html')
+def gr65(request):
+    return render(request,'main/Расписание/2022-ФАиГ-АРХ-2м.html')
+def gr66(request):
+    return render(request,'main/Расписание/2022-ФАиГ-Градо-1б.html')
+def gr67(request):
+    return render(request,'main/Расписание/2021-ФАиГ-АРХ-1б.html')
+def gr68(request):
+    return render(request,'main/Расписание/2021-ФАиГ-Градо-1б.html')
+def gr69(request):
+    return render(request,'main/Расписание/2020-ФАиГ-АРХ-1б.html')
+def gr70(request):
+    return render(request,'main/Расписание/2020-ФАиГ-АРХ-2б.html')
+def gr71(request):
+    return render(request,'main/Расписание/2019-ФАиГ-АРХ-1б.html')
+def gr72(request):
+    return render(request,'main/Расписание/2019-ФАиГ-АРХ-2б.html')
+def gr73(request):
+    return render(request,'main/Расписание/2023-ФОП-ЛТиЛТ-1б.html')
+def gr74(request):
+    return render(request,'main/Расписание/2023-ФОП-ОПТ-1б.html')
+def gr75(request):
+    return render(request,'main/Расписание/2023-ФОП-ОПТ-1м.html')
+def gr76(request):
+    return render(request,'main/Расписание/2023-ФОП-ОЭП-1асп.html')
+def gr77(request):
+    return render(request,'main/Расписание/2023-ФОП-ЭиОЭПиССН-1.html')
+def gr78(request):
+    return render(request,'main/Расписание/2022-ФОП-ЛТиЛТ-1б.html')
+def gr79(request):
+    return render(request,'main/Расписание/2022-ФОП-ОПТ-1б.html')
+def gr80(request):
+    return render(request,'main/Расписание/2022-ФОП-ЭиОЭПиССН-1.html')
+def gr81(request):
+    return render(request,'main/Расписание/2021-ФОП-ЛТиЛТ-1б.html')
+def gr82(request):
+    return render(request,'main/Расписание/2021-ФОП-ОПТ-1б.html')
+def gr83(request):
+    return render(request,'main/Расписание/2021-ФОП-ЭиОЭПиССН-1.html')
+def gr84(request):
+    return render(request,'main/Расписание/2020-ФОП-ЛТиЛТ-1б.html')
+def gr85(request):
+    return render(request,'main/Расписание/2020-ФОП-ОПТ-1б.html')
+def gr86(request):
+    return render(request,'main/Расписание/2020-ФОП-ЭиОЭПиССН-1.html')
+def gr87(request):
+    return render(request,'main/Расписание/2019-ФОП-ЭиОЭПиССН-1.html')
+def gr88(request):
+    return render(request,'main/Расписание/2023-ФУТ-ЗиКзио-1б.html')
+def gr89(request):
+    return render(request,'main/Расписание/2023-ФУТ-ЗиКзио-1м.html')
+def gr90(request):
+    return render(request,'main/Расписание/2023-ФУТ-ЗиКкн-1б.html')
+def gr91(request):
+    return render(request,'main/Расписание/2023-ФУТ-ЗиКунирт-1м.html')
+def gr92(request):
+    return render(request,'main/Расписание/2023-ФУТ-ЗиКупр-1б.html')
+def gr93(request):
+    return render(request,'main/Расписание/2023-ФУТ-ЗКиМЗ-1асп.html')
+def gr94(request):
+    return render(request,'main/Расписание/2023-ФУТ-САУ-1б.html')
+def gr95(request):
+    return render(request,'main/Расписание/2023-ФУТ-УпрК-1б.html')
+def gr96(request):
+    return render(request,'main/Расписание/2022-ФУТ-ЗиКзио-1б.html')
+def gr97(request):
+    return render(request,'main/Расписание/2022-ФУТ-ЗиКзио-1м.html')
+def gr98(request):
+    return render(request,'main/Расписание/2022-ФУТ-ЗиКкн-1б.html')
+def gr99(request):
+    return render(request,'main/Расписание/2022-ФУТ-ЗиКунирт-1м.html')
+def gr100(request):
+    return render(request,'main/Расписание/2022-ФУТ-ЗиКупр-1б.html')
+def gr101(request):
+    return render(request,'main/Расписание/2022-ФУТ-САУ-1б.html')
+def gr102(request):
+    return render(request,'main/Расписание/2022-ФУТ-УпрК-1б.html')
+def gr103(request):
+    return render(request,'main/Расписание/2021-ФУТ-ЗиКзио-1б.html')
+def gr104(request):
+    return render(request,'main/Расписание/2021-ФУТ-ЗиКкн-1б.html')
+def gr105(request):
+    return render(request,'main/Расписание/2021-ФУТ-ЗиКупр-1б.html')
+def gr106(request):
+    return render(request,'main/Расписание/2021-ФУТ-САУ-1б.html')
+def gr107(request):
+    return render(request,'main/Расписание/2021-ФУТ-ЮС(вв)-1б.html')
+def gr108(request):
+    return render(request,'main/Расписание/2020-ФУТ-ЗиКзио-1б.html')
+def gr109(request):
+    return render(request,'main/Расписание/2020-ФУТ-ЗиКкн-1б.html')
+def gr110(request):
+    return render(request,'main/Расписание/2020-ФУТ-ЗиКупр-1б.html')
+def gr111(request):
+    return render(request,'main/Расписание/2023-ФГиИБ-ИБ-1б.html')
+def gr112(request):
+    return render(request,'main/Расписание/2023-ФГиИБ-ИБ-1м.html')
+def gr113(request):
+    return render(request,'main/Расписание/2023-ФГиИБ-ИБ-2б.html')
+def gr114(request):
+    return render(request,'main/Расписание/2023-ФГиИБ-ИСиТ-1б.html')
+def gr115(request):
+    return render(request,'main/Расписание/2023-ФГиИБ-ИСиТ-2б.html')
+def gr116(request):
+    return render(request,'main/Расписание/2023-ФГиИБ-ИСиТиб ик.html')
+def gr117(request):
+    return render(request,'main/Расписание/2023-ФГиИБ-ПИ-1б.html')
+def gr118(request):
+    return render(request,'main/Расписание/2023-ФГиИБ-ПИабпд-1м.html')
+def gr119(request):
+    return render(request,'main/Расписание/2022-ФГиИБ-ИБ-1б.html')
+def gr120(request):
+    return render(request,'main/Расписание/2022-ФГиИБ-ИБ-1м.html')
+def gr121(request):
+    return render(request,'main/Расписание/2022-ФГиИБ-ИБ-2б.html')
+def gr122(request):
+    return render(request,'main/Расписание/2022-ФГиИБ-ИСиТ-1б.html')
+def gr123(request):
+    return render(request,'main/Расписание/2022-ФГиИБ-ИСиТ-2б.html')
+def gr124(request):
+    return render(request,'main/Расписание/2022-ФГиИБ-ИСиТ-3б.html')
+def gr125(request):
+    return render(request,'main/Расписание/2022-ФГиИБ-ИСиТиб ик.html')
+def gr126(request):
+    return render(request,'main/Расписание/2022-ФГиИБ-ПИ-1б.html')
+def gr127(request):
+    return render(request,'main/Расписание/2022-ФГиИБ-ПИ-1м.html')
+def gr128(request):
+    return render(request,'main/Расписание/2021-ФГиИБ-ИБ-1б.html')
+def gr129(request):
+    return render(request,'main/Расписание/2021-ФГиИБ-ИБ-2б.html')
+def gr130(request):
+    return render(request,'main/Расписание/2021-ФГиИБ-ИСиТ-1б.html')
+def gr131(request):
+    return render(request,'main/Расписание/2021-ФГиИБ-ИСиТ-2б.html')
+def gr132(request):
+    return render(request,'main/Расписание/2021-ФГиИБ-ПИ-1б.html')
+def gr133(request):
+    return render(request,'main/Расписание/2021-ФГиИБ-ПИ-2б.html')
+def gr134(request):
+    return render(request,'main/Расписание/2020-ФГиИБ-ИБ-1б.html')
+def gr135(request):
+    return render(request,'main/Расписание/2020-ФГиИБ-ИБ-2б.html')
+def gr136(request):
+    return render(request,'main/Расписание/2020-ФГиИБ-ИСиТ-1б.html')
+def gr137(request):
+    return render(request,'main/Расписание/2020-ФГиИБ-ИСиТ-2б.html')
+def gr138(request):
+    return render(request,'main/Расписание/2020-ФГиИБ-ПИ-1б.html')
+def GetGroup(request, gruppa):
+    return render(request, 'main/Расписание/' + gruppa + '.html')
