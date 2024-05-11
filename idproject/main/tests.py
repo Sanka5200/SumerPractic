@@ -104,8 +104,7 @@ with open('list_by_faculties,_courses_and_groups.txt', 'w', encoding='utf-8') as
 
 connection.commit()
 connection.close()
-# def GetGroup(request, gruppa):
-#     return render(request, 'main/Расписание/' + gruppa + '.html')
+
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'Accept-Language': 'ru,en;q=0.9',
